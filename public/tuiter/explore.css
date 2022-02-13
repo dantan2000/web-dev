@@ -1,0 +1,92 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.wd-content {
+  padding-left: 16px;
+  border: 1px solid #2F3336;
+  clear: both;
+}
+
+div#top-bar {
+  position: relative;
+  height: 40px;
+  padding-bottom: 16px;
+  padding-top: 12px;
+}
+
+input#search-bar {
+  background-color: #212327;
+  color: white;
+  height: 100%;
+  width: 90%;
+  border-radius: 20px;
+  border: none;
+}
+
+a#setting-icon {
+  position: absolute;
+  font-size: 30px;
+  width: 10%;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #15A1F2;
+}
+
+.wd-tabs {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+}
+
+.wd-tabs .wd-tab-active {
+  text-align: center;
+  color: #15A1F2;
+  border-bottom: 3px solid #15A1F2;
+  width: 16%;
+}
+
+.wd-tab-active .wd-tab-text {
+  height: 100%;
+  margin: auto;
+}
+
+.wd-tabs .wd-tab {
+  padding: 16px;
+  color: #6E767D;
+  width: 16%;
+  text-align: center;
+}
+
+.h-space {
+  clear: both;
+  background-color: #15171c;
+  height: 30px;
+  border: 1px solid #2F3336;
+}
+
+.wd-post {
+  overflow: hidden;
+}
+
+.wd-post-content {
+  float: left;
+}
+
+.wd-post-content p {
+  font-size: 13px;
+  color: #6E767D;
+}
+
+.wd-post-image {
+  float: right;
+  padding: 16px;
+}
+
+.wd-post-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+}

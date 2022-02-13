@@ -1,0 +1,114 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.wd-wrapper {
+  width: fit-content
+}
+
+.wd-top-bar {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #2F3336;
+}
+
+.wd-top-bar #title {
+  font-size: 20px;
+  color: white;
+}
+
+.wd-top-bar #user {
+  font-size: 13px;
+  color: #6E767D;
+}
+
+.wd-content {
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #2F3336;
+  width: fit-content;
+}
+
+.wd-post {
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 580px;
+}
+
+.wd-post-author-avatar {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wd-post-author-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.wd-post-content {
+  display: inline-block;
+  padding-left: 16px;
+  max-width: 506px;
+}
+
+.wd-post-author {
+  font-size: 15px;
+  color: white;
+}
+
+.wd-post-topic {
+  font-size: 15px;
+  color: #6E767D;
+}
+
+.wd-post-summary {
+  font-size: 13px;
+  color: white;
+}
+
+.wd-post-image {
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid #2F3336;
+}
+
+.wd-post-image img {
+  width: 504px;
+  height: 264px;
+  border-radius: 12px 12px 0 0;
+}
+
+.wd-post-image-summary {
+  padding: 12px;
+  font-size: 15px;
+}
+
+.wd-post-title {
+  color: white;
+}
+
+.wd-post-text {
+  color: #6E767D;
+}
+
+.wd-reactions {
+  padding-top: 12px;
+}
+
+.wd-reactions td {
+  width: 7%;
+}
+
+.wd-reaction {
+  color: #6E767D;
+  text-decoration: none;
+}
+
+.wd-reaction-selected {
+  text-decoration: none;
+  color: red;
+}
