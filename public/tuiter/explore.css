@@ -1,92 +1,91 @@
 body {
   background-color: #000000;
   color: white;
+  min-width: 576px;
+  overflow-x: hidden;
 }
 
 .wd-content {
-  padding-left: 16px;
-  border: 1px solid #2F3336;
+  padding: 16px;
   clear: both;
 }
 
-div#top-bar {
-  position: relative;
-  height: 40px;
-  padding-bottom: 16px;
-  padding-top: 12px;
+.wd-image-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  color: white;
+  z-index: 10;
 }
 
-input#search-bar {
-  background-color: #212327;
-  color: white;
-  height: 100%;
-  width: 90%;
-  border-radius: 20px;
-  border: none;
+.wd-rounded .form-control {
+  border-radius: 0 100px 100px 0;
+  padding-left: 1rem;
+  border-left: 0px;
+}
+
+.wd-rounded .input-group-text {
+  border-radius: 100px 0 0 100px;
+  border-right: 0px;
 }
 
 a#setting-icon {
-  position: absolute;
   font-size: 30px;
-  width: 10%;
-  padding-top: 5px;
-  text-align: center;
   text-decoration: none;
   color: #15A1F2;
 }
 
-.wd-tabs {
-  width: 100%;
-  height: 50px;
-  font-size: 15px;
-}
-
-.wd-tabs .wd-tab-active {
-  text-align: center;
-  color: #15A1F2;
-  border-bottom: 3px solid #15A1F2;
-  width: 16%;
-}
-
-.wd-tab-active .wd-tab-text {
-  height: 100%;
-  margin: auto;
-}
-
-.wd-tabs .wd-tab {
-  padding: 16px;
-  color: #6E767D;
-  width: 16%;
-  text-align: center;
-}
-
-.h-space {
-  clear: both;
-  background-color: #15171c;
-  height: 30px;
-  border: 1px solid #2F3336;
-}
-
 .wd-post {
-  overflow: hidden;
+  padding-left: 16px;
 }
 
-.wd-post-content {
-  float: left;
-}
-
-.wd-post-content p {
-  font-size: 13px;
+.wd-post-topic {
+  font-size: 14px;
   color: #6E767D;
+}
+
+.wd-post-author {
+  font-weight: bold;
+}
+
+.wd-post-timestamp {
+  color: #6E767D;
+}
+
+.wd-post-description {
+  font-weight: bold;
 }
 
 .wd-post-image {
   float: right;
-  padding: 16px;
 }
 
 .wd-post-image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 30px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 12px;
+  margin-left: 0;
+}
+
+.wd-font-weight-bold {
+  font-weight: bold;
+}
+
+.wd-profile-handle {
+  color: #6E767D;
+}
+
+.wd-profile-image {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.wd-profile-button-wrapper {
+  position: absolute;
+  right: 0.5em;
+  align-self: center;
 }

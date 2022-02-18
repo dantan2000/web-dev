@@ -8,112 +8,299 @@
   <title>Explore</title>
   <link href="explore.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/7ed7020894.js" crossorigin="anonymous"></script>
+  <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <div class="wd-content">
-    <div id="top-bar">
-      <input id="search-bar" type="text" placeholder="Search Tuiter">
-      <a id="setting-icon" href="explore-settings.html"><i class="fa fa-gear"></i></a> <br>
+  <div class="row px-4">
+
+    <div class="col-xl-2 col-auto pt-3 px-0 wd-sidebar">
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fab fa-twitter"></i></div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-home"></i></div>
+          <div class="d-none d-xl-block col-auto">Home</div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-hashtag"></i></div>
+          <div class="d-none d-xl-block col-auto">Explore</div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-bell"></i></div>
+          <div class="d-none d-xl-block col-auto">Notifications</div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-envelope"></i></div>
+          <div class="d-none d-xl-block col-auto">Messages</div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-bookmark"></i></div>
+          <div class="d-none d-xl-block col-auto">Bookmarks</div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-list"></i></div>
+          <div class="d-none d-xl-block col-auto">Lists</div>
+        </div>
+      </div>
+      <div class="border border-bottom-0">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-user"></i></div>
+          <div class="d-none d-xl-block col-auto">Profile</div>
+        </div>
+      </div>
+      <div class="border">
+        <div class="row my-0 ps-3 w-100">
+          <div class="col-auto"><i class="fas fa-ellipsis-h"></i></div>
+          <div class="d-none d-xl-block col-auto">More</div>
+        </div>
+      </div>
+
+      <div class="col-auto mx-0 py-2">
+        <button class="btn btn-primary rounded-pill py-0 px-2">
+            Tweet
+        </button>
+      </div>
     </div>
 
-    <table class="wd-tabs">
-      <tbody>
-        <tr>
-          <td class="wd-tab-active">For You</td>
-          <td class="wd-tab">Trending</td>
-          <td class="wd-tab">COVID-19</td>
-          <td class="wd-tab">News</td>
-          <td class="wd-tab">Sports</td>
-          <td class="wd-tab">Entertainment</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 
-  <div class="h-space"></div>
 
-  <div class="wd-content">
-    <div class="wd-post">
-      <div class="wd-post-content">
-        <p>
-          <span class="wd-post-topic">Trending in Science</span>
-        </p>
-        <h3 class="wd-post-title">Starship</h3>
-        <p class="wd-post-tuits">55.5k Tweets</p>
+
+
+    <div class="col-10 col-lg-7 col-xl-6 wd-content">
+
+      <div class="row mb-3">
+
+        <div class="col-11 align-self-center">
+          <div class="input-group wd-rounded">
+            <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search Twitter">
+          </div>
+        </div>
+        <div class="col-1 align-self-center">
+          <a class="mx-auto" id="setting-icon" href="explore-settings.html"><i class="fas fa-cog"></i></a>
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="explore.html#">For You</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="explore.html#">Trending</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="explore.html#">News</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="explore.html#">Sports</a></li>
+        <li class="d-none d-md-block nav-item">
+          <a class="nav-link" href="explore.html#">Entertainment</a></li>
+      </ul>
+
+
+
+
+      <div>
+        <div class="position-relative mt-2">
+          <h1 class="wd-image-title">SpaceX's Starship</h1>
+          <img src="Starship.jpg" class="w-100">
+        </div>
+
+        <div class="wd-post border">
+          <div class="row">
+            <div class="col mt-2 wd-post-content pe-0">
+              <div class="wd-post-topic">Web Development</div>
+              <div>
+                <span class="wd-post-author">ReactJS <i class="fas fa-check-circle"></i></span>
+                <span class="wd-post-timestamp"> - 2h</span>
+              </div>
+              <div class="wd-post-description">
+                React.js is a componenet based front end library that makes it very easy to build Single Page Applications or SPAs
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="wd-post-image">
+                <img src="React-icon.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wd-post border">
+          <div class="row">
+            <div class="col mt-2 wd-post-content pe-0">
+              <div>
+                <span class="wd-post-author">Javascript <i class="fas fa-check-circle"></i></span>
+                <span class="wd-post-timestamp"> - 2h</span>
+              </div>
+              <div class="wd-post-description">
+                Javascript is a programming language that can run on browsers as well as desktops
+              </div>
+              <div class="wd-post-tuits">123K Tweets</div>
+            </div>
+            <div class="col-auto">
+              <div class="wd-post-image">
+                <img src="javascript.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="wd-post border">
+          <div class="row">
+            <div class="col mt-2 wd-post-content pe-0">
+              <div class="wd-post-topic">Web Development</div>
+              <div class="wd-post-description">jQurery</div>
+              <div class="wd-post-tuits">123K Tweets</div>
+            </div>
+            <div class="col-auto">
+              <div class="wd-post-image">
+                <img src="jquery.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wd-post border">
+          <div class="row">
+            <div class="col mt-2 wd-post-content pe-0">
+              <div class="wd-post-topic">Web Development</div>
+              <div>
+                <span class="wd-post-author">NodeJS <i class="fas fa-check-circle"></i></span>
+                <span class="wd-post-timestamp"> - 2h</span>
+              </div>
+              <div class="wd-post-tuits">123K Tweets</div>
+            </div>
+            <div class="col-auto">
+              <div class="wd-post-image">
+                <img src="nodejs.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="d-none d-lg-block col-4 wd-content wd-profiles text-nowrap">
+      <div class="border border-bottom-0">
+        <div class="row py-2 px-2">
+          <span class="wd-font-weight-bold">Who to follow</span>
+        </div>
+      </div>
+
+      <div class="border border-bottom-0">
+        <div class="row py-2 px-2 position-relative">
+          <div class="col-auto">
+            <img class="wd-profile-image rounded-circle" src="java.png">
+          </div>
+          <div class="col wd-profile-description">
+            <div class="wd-font-weight-bold">Java <i class="fas fa-check-circle"></i></div>
+            <div class="wd-profile-handle">@Java</div>
+          </div>
+          <div class="col-auto wd-profile-button-wrapper">
+            <button class="btn btn-primary rounded-pill py-0">
+                Follow
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-bottom-0">
+        <div class="row py-2 px-2 position-relative">
+          <div class="col-auto">
+            <img class="wd-profile-image rounded-circle" src="relativity_space.jpg">
+          </div>
+          <div class="col wd-profile-description">
+            <div class="wd-font-weight-bold">Relativity Space <i class="fas fa-check-circle"></i></div>
+            <div class="wd-profile-handle">@relativityspace</div>
+          </div>
+          <div class="col-auto wd-profile-button-wrapper">
+            <button class="btn btn-primary rounded-pill py-0">
+                Follow
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-bottom-0">
+        <div class="row py-2 px-2 position-relative">
+          <div class="col-auto">
+            <img class="wd-profile-image rounded-circle" src="virgin_galactic.png">
+          </div>
+          <div class="col wd-profile-description">
+            <div class="wd-font-weight-bold">Virgin Galactic <i class="fas fa-check-circle"></i></div>
+            <div class="wd-profile-handle">@virgingalactic</div>
+          </div>
+          <div class="col-auto wd-profile-button-wrapper">
+            <button class="btn btn-primary rounded-pill py-0">
+                Follow
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-bottom-0">
+        <div class="row py-2 px-2 position-relative">
+          <div class="col-auto">
+            <img class="wd-profile-image rounded-circle" src="NASA.png">
+          </div>
+          <div class="col wd-profile-description">
+            <div class="wd-font-weight-bold">NASA <i class="fas fa-check-circle"></i></div>
+            <div class="wd-profile-handle">@NASA</div>
+          </div>
+          <div class="col-auto wd-profile-button-wrapper">
+            <button class="btn btn-primary rounded-pill py-0">
+                Follow
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-bottom-0">
+        <div class="row py-2 px-2 position-relative">
+          <div class="col-auto">
+            <img class="wd-profile-image rounded-circle" src="tesla.png">
+          </div>
+          <div class="col wd-profile-description">
+            <div class="wd-font-weight-bold">Tesla <i class="fas fa-check-circle"></i></div>
+            <div class="wd-profile-handle">@Tesla</div>
+          </div>
+          <div class="col-auto wd-profile-button-wrapper">
+            <button class="btn btn-primary rounded-pill py-0">
+                Follow
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
-  <div class="wd-content">
-    <div class="wd-post">
-      <div class="wd-post-content">
-        <p>
-          <span class="wd-post-topic">Sports &bull; Trending</span>
-        </p>
-        <h3 class="wd-post-title">Joe Rogan</h3>
-        <p class="wd-post-tuits">5,218 Tweets</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="wd-content">
-    <div class="wd-post">
-      <div class="wd-post-content">
-        <p>
-          <span class="wd-post-author">The New York Times</span>
-          <span class="wd-post-topic"> &bull; Yesterday</span>
-        </p>
-        <h3 class="wd-post-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h3>
-        <p class="wd-post-tuits">5218 Tweets</p>
-      </div>
-      <div class="wd-post-image">
-        <img src="D.svg.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="wd-content">
-    <div class="wd-post">
-      <div class="wd-post-content">
-        <p>
-          <span class="wd-post-topic">COVID-19 &bull; LIVE</span>
-        </p>
-        <h3 class="wd-post-title">Covid-19: News and updates for Massachusetts</h3>
-      </div>
-      <div class="wd-post-image">
-        <img src="rocket.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="wd-content">
-    <div class="wd-post">
-      <div class="wd-post-content">
-        <p>
-          <span class="wd-post-author">Bloomberg Opinion</span>
-          <span class="wd-post-topic"> &bull; Yesterday</span>
-        </p>
-        <h3 class="wd-post-title">Thinking about getting a booster? Read this first.</h3>
-      </div>
-      <div class="wd-post-image">
-        <img src="razer.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="wd-content">
-    <div class="wd-post">
-      <div class="wd-post-content">
-        <p>
-          <span class="wd-post-topic">Trending in United States</span>
-        </p>
-        <h3 class="wd-post-title">Wonder Bread</h3>
-        <p class="wd-post-tuits">1,259 Tweets</p>
-      </div>
-    </div>
-  </div>
+  <!-- <div class="d-block d-sm-none fa-2x">XS</div>
+  <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+  <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+  <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+  <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+  <div class="d-none d-xxl-block fa-2x">XXL</div> -->
 
 </body>
 
