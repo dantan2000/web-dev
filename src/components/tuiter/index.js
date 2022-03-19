@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavigationSidebar from "./navigation-sidebar";
-import WhoToFollowList from "./who-to-follow-list";
-import PostSummaryList from "./post-summary-list";
-import ExploreComponent from "./explore-screen/explore-component";
+// import NavigationSidebar from "./navigation-sidebar";
+// import WhoToFollowList from "./who-to-follow-list";
+// import PostSummaryList from "./post-summary-list";
+// import ExploreComponent from "./explore-screen/explore-component";
 import ExploreScreen from "./explore-screen";
 import "./index.css";
 

@@ -24,7 +24,7 @@ const PostSummaryItem = (
               </div>
               <div className="col-auto">
                 <div className="wd-post-image">
-                  <img src={post.image}/>
+                  <img src={post.image} alt=""/>
                 </div>
               </div>
             </div>

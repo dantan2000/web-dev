@@ -11,7 +11,7 @@ const makeNavigationElement = ({
   active = 'explore'
 }) => {
   return (
-    <a className={`list-group-item ${elem.label.toLowerCase() === active.toLowerCase() ? " " + 'active' : ""}`} href={elem.link}>
+    <a className={`list-group-item ${elem.label.toLowerCase() === active.toLowerCase() ? " active" : ""}`} href={elem.link}>
       <div className="row">
         <div className="col-auto wd-nav-icon"><i className={elem.icon}></i></div>
         <div className="d-none d-xl-block col-auto">{elem.label}</div>

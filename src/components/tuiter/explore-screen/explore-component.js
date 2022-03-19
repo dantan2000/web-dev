@@ -34,7 +34,7 @@ const ExploreComponent = () => {
               <div>
                 <div className="position-relative mt-2">
                   <h1 className="wd-image-title">SpaceX's Starship</h1>
-                  <img src="/tuiter/Starship.jpg" className="w-100"/>
+                  <img src="/tuiter/Starship.jpg" className="w-100" alt=""/>
                 </div>
               </div>
 
