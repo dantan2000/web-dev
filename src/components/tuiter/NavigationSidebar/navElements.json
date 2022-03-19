@@ -1,0 +1,41 @@
+[{
+    "link": "home.html",
+    "icon": "fas fa-home",
+    "label": "Home"
+  },
+  {
+    "link": "#.html",
+    "icon": "fas fa-hashtag",
+    "label": "Explore"
+  },
+  {
+    "link": "notifications.html",
+    "icon": "fas fa-bell",
+    "label": "Notifications"
+  },
+  {
+    "link": "messages.html",
+    "icon": "fas fa-envelope",
+    "label": "Messages"
+  },
+  {
+    "link": "bookmarks.html",
+    "icon": "fas fa-bookmark",
+    "label": "Bookmarks"
+  },
+  {
+    "link": "lists.html",
+    "icon": "fas fa-list",
+    "label": "Lists"
+  },
+  {
+    "link": "profile.html",
+    "icon": "fas fa-user",
+    "label": "Profile"
+  },
+  {
+    "link": "more.html",
+    "icon": "fas fa-ellipsis-h",
+    "label": "More"
+  }
+]
