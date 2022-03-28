@@ -8,7 +8,6 @@ const WhoToFollowListItem = (
       }
   }
 ) => {
-  console.log(who);
   return (
           <li className="list-group-item">
             <div className="row py-2 px-2 position-relative">

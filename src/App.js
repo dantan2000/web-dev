@@ -8,6 +8,8 @@ import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
+import HomeScreen from "./components/tuiter/home-screen"
+
 
 
 function App() {
@@ -23,7 +25,16 @@ function App() {
             element={<Labs/>}/>
           <Route path="/tuiter"
             exact={true}
-            element={<Tuiter/>}/>
+            element={<Tuiter/>}>
+            <Route index
+                   element={<HomeScreen/>}/>
+                   { /*
+            <Route path="explore"
+                   element={<ExploreScreen/>}/>
+            <Route path="notifications" 
+                   element={<NotificationScreen/>}/>
+              */}
+          </Route>
         </Routes>
       </div>
     </BrowserRouter>
