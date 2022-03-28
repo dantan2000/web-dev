@@ -61,10 +61,10 @@ const TuitListItem = (
                 switch (key) {
                   case 'video':
                     return <div className="ratio ratio-16x9 ">
-                      <iframe className="wd-video-attachment" src={`https://www.youtube.com/embed/${tuit.attachments[key]}`} allowFullScreen></iframe>
+                      <iframe className="wd-video-attachment" src={`https://www.youtube.com/embed/${tuit.attachments[key]}`} title={tuit.attachments[key]} allowFullScreen></iframe>
                     </div>
                   case 'image':
-                    return <img className="wd-image-attachment" src={tuit.attachments[key]} alt="tuit image"></img>
+                    return <img className="wd-image-attachment" src={tuit.attachments[key]}></img>
                   default:
                     return <></>
                 }
