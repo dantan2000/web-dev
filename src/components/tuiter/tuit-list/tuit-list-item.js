@@ -64,7 +64,7 @@ const TuitListItem = (
                       <iframe className="wd-video-attachment" src={`https://www.youtube.com/embed/${tuit.attachments[key]}`} title={tuit.attachments[key]} allowFullScreen></iframe>
                     </div>
                   case 'image':
-                    return <img className="wd-image-attachment" src={tuit.attachments[key]}></img>
+                    return <img className="wd-image-attachment" src={tuit.attachments[key]} alt="tuit"></img>
                   default:
                     return <></>
                 }
