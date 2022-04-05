@@ -14,8 +14,7 @@ const TuitList = () => {
     state => state.tuits);
   const dispatch = useDispatch();
   useEffect(() =>
-    findAllTuits(dispatch),
-    []);
+    findAllTuits(dispatch));
 
 
   return ( 
