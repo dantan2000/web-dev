@@ -9,7 +9,7 @@ const WhoToFollowListItem = (
   }
 ) => {
   return (
-          <li className="list-group-item">
+          <li className="list-group-item" key={who.userName}>
             <div className="row py-2 px-2 position-relative">
               <div className="col-auto">
                 <img className="wd-profile-image rounded-circle" src={who.avatarIcon} alt=""/>

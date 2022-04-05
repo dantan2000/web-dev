@@ -1,6 +1,8 @@
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
 
+import { deleteTuit }
+  from "../../actions/tuits-actions";
 
 const TuitListItem = (
   {
@@ -31,13 +33,10 @@ const TuitListItem = (
 ) => {
   
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({type: 'delete-tuit', tuit})
-  };
 
   return (
     <>
-      <li className="list-group-item">
+      <li className="list-group-item" key={tuit._id}>
         <div className="row py-2 px-2 position-relative">
           <div className="col-auto">
             <img className="wd-profile-image rounded-circle" src={tuit["avatar-image"]} alt="" />
@@ -50,7 +49,7 @@ const TuitListItem = (
               </div>
               <div className="col-1">
                 <i onClick={() =>
-                  deleteTuit(tuit)}
+                  deleteTuit(dispatch, tuit)}
                   className="fas fa-times 
                   fa-pull-right"></i>
               </div>
@@ -74,29 +73,6 @@ const TuitListItem = (
           </div>
         </div>
       </li>
-
-
-
-
-      {/* <li className="list-group-item">
-        <div className="row">
-          <div className="col mt-2 wd-post-content pe-0">
-            <div className="wd-post-topic">{post.topic}</div>
-            <div>
-              <span className="wd-post-author">{post.userName} <i className="fas fa-check-circle"></i></span>
-              <span className="wd-post-timestamp"> - {post.time}</span>
-            </div>
-            <div className="wd-post-description">
-              {post.title}
-            </div>
-          </div>
-          <div className="col-auto">
-            <div className="wd-post-image">
-              <img src={post.image} alt="" />
-            </div>
-          </div>
-        </div>
-      </li> */}
     </>
   );
 }

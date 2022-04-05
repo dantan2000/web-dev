@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const WhoToFollowList = () => {
   const who = useSelector((state) => state.who);
   return (
-    <ul class="list-group">
+    <ul className="list-group" key="who-to-follow-list">
     {
       who.map(who => {
         return (
