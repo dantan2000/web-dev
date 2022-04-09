@@ -1,0 +1,25 @@
+.wd-video-attachment {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.wd-image-attachment {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.wd-tuit-interactions {
+  color: #6E767D;
+}
+
+.wd-form-icons i {
+  color: #2a9fd6;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.wd-input-text-area {
+  color: white;
+}
