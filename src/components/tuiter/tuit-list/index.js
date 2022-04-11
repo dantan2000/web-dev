@@ -16,7 +16,6 @@ const TuitList = () => {
   useEffect(() =>
     findAllTuits(dispatch));
 
-
   return ( 
     <ul className = "ttr-tuits list-group" > {
       tuits.map && tuits.map(tuit =>

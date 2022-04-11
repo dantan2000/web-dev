@@ -27,10 +27,10 @@ const TuitStats = ({ tuit }) => {
 
     <div className="row pt-3">
       <div className="col-3">
-        <i className="far fa-comment me-1"></i> {tuit.stats.comments}
+        <i className="far fa-comment me-1"></i> {tuit.stats && tuit.stats.comments}
       </div>
       <div className="col-3">
-        <i className="fas fa-retweet me-1"></i> {tuit.stats.retuits}
+        <i className="fas fa-retweet me-1"></i> {tuit.stats && tuit.stats.retuits}
       </div>
       <div className="col-3">
         <span onClick={() => updateTuit(dispatch, likeTuit(tuit))}>

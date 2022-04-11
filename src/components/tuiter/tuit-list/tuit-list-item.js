@@ -7,7 +7,7 @@ import { deleteTuit }
 const TuitListItem = (
   {
     tuit = {
-      "_id": "123",
+      "_id": 123,
       "topic": "Web Development",
       "postedBy": {
         "username": "ReactJS"
@@ -33,7 +33,6 @@ const TuitListItem = (
 ) => {
   
   const dispatch = useDispatch();
-
   return (
     <>
       <li className="list-group-item" key={tuit._id}>
